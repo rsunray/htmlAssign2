@@ -1,0 +1,39 @@
+/* variables */
+
+/* custom style */
+.navbar{
+  background-color: lavender;
+}
+
+/* media queries */
+@media (min-width : 768px) and (max-width : 871px){
+  .navbar-header{
+    .navbar-brand{
+      letter-spacing: 10px;
+    }
+  }
+  .nav{
+    width: 100%;
+    li{
+      margin-left: 5%;
+    }
+  }
+}
+
+@media (max-width : 767px) {
+  .navbar-brand{
+    width: 70%;
+    padding: 0;
+  }
+  button{
+    width: 10%;
+    padding: 0;
+    margin: 0;
+  }
+  #nav_main{
+    width: 100%;
+  }
+  .nav{
+    width: 100%;
+  }
+}

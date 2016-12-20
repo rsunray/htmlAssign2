@@ -1,0 +1,32 @@
+/* variables */
+
+/* mixins */
+
+/* custom style */
+footer{
+  background-color: yellowgreen;
+  margin-top: 50px;
+  box-shadow: 0 0 10px peru;
+  .map iframe{
+    border: 5px solid;
+    width: 100%;
+  }
+  address{
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .ref{
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .conn{
+    text-align: center;
+    margin-bottom: 0px;
+    ul{
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+}
+
+/* media queries */

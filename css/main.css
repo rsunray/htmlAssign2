@@ -1,0 +1,276 @@
+/* variables */
+/* imports */
+/* variables */
+/* custom style */
+/* variables */
+/* custom style */
+.navbar
+{
+    background-color: lavender;
+}
+
+/* media queries */
+@media (min-width: 768px) and (max-width: 871px)
+{
+    .navbar-header .navbar-brand
+    {
+        letter-spacing: 10px;
+    }
+
+    .nav
+    {
+        width: 100%;
+    }
+    .nav li
+    {
+        margin-left: 5%;
+    }
+}
+@media (max-width: 767px)
+{
+    .navbar-brand
+    {
+        width: 70%;
+        padding: 0;
+    }
+
+    button
+    {
+        width: 10%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav_main
+    {
+        width: 100%;
+    }
+
+    .nav
+    {
+        width: 100%;
+    }
+}
+/* variables */
+/* mixins */
+/* custom style */
+section
+{
+    margin-top: 60px;
+}
+section .cards
+{
+    margin-top: 30px;
+}
+section .cards .card
+{
+    position: relative;
+
+    height: 250px;
+
+    -webkit-transition: all 1s linear;
+       -moz-transition: all 1s linear;
+            transition: all 1s linear;
+    -webkit-transform-origin: center;
+       -moz-transform-origin: center;
+            transform-origin: center;
+
+            transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+}
+section .cards .card:hover
+{
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+section .cards .card img
+{
+    position: absolute;
+
+    width: 90%;
+    height: 250px;
+
+    border-color: forestgreen;
+    background-color: seashell;
+    box-shadow: 0 0 10px goldenrod;
+
+    backface-visibility: hidden;
+}
+section .cards .card blockquote
+{
+    line-height: 3em;
+
+    position: absolute;
+
+    width: 90%;
+    height: 250px;
+    padding: 0;
+
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+
+    border-color: forestgreen;
+    background-color: seashell;
+    box-shadow: 0 0 10px goldenrod;
+
+    backface-visibility: hidden;
+}
+section .carousel
+{
+    height: 400px;
+    margin-top: 30px;
+
+    box-shadow: 5px 5px 10px teal;
+}
+section .carousel .item img
+{
+    width: 100%;
+    height: 400px;
+}
+
+/* media queries */
+@media (max-width: 991px) and (min-width: 626px)
+{
+    section .cards .card
+    {
+        width: 60%;
+        margin-top: 30px;
+        margin-left: 20%;
+    }
+}
+@media (max-width: 625px)
+{
+    section .cards .card
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+/* variables */
+/* custom style */
+article h1
+{
+    margin-top: 50px;
+
+    background-color: ivory;
+    box-shadow: 0 0 10px powderblue;
+}
+article .panel-primary
+{
+    height: 30%;
+    margin-top: 30px;
+    padding: 15px;
+
+    background-color: lemonchiffon;
+    box-shadow: 5px 5px 5px powderblue;
+}
+
+/* media queries */
+@media (max-width: 991px)
+{
+    .panel-primary
+    {
+        height: 30%;
+    }
+}
+/* variables */
+/* mixins */
+/* custom style */
+footer
+{
+    margin-top: 50px;
+
+    background-color: yellowgreen;
+    box-shadow: 0 0 10px peru;
+}
+footer .map iframe
+{
+    width: 100%;
+
+    border: 5px solid;
+}
+footer address
+{
+    margin-bottom: 0;
+
+    text-align: center;
+}
+footer .ref
+{
+    margin-bottom: 0;
+
+    text-align: center;
+}
+footer .conn
+{
+    margin-bottom: 0;
+
+    text-align: center;
+}
+footer .conn ul
+{
+    padding-left: 0;
+
+    list-style: none;
+}
+
+/* media queries */
+/* variables */
+/* mixins */
+/* custom style */
+body .aside_container .video iframe
+{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+
+    border: 0;
+    box-shadow: 0 0 10px teal;
+}
+
+aside
+{
+    height: 100%;
+    margin-top: 50px;
+
+    box-shadow: 0 0 10px darkcyan;
+}
+aside .tab-pane
+{
+    margin-bottom: 10px;
+    padding: 15px;
+
+    background-color: moccasin;
+}
+aside .tab-pane button
+{
+    width: auto;
+}
+aside .tab-pane .modal
+{
+    position: absolute;
+}
+
+/* media queries */
+@media (max-width: 991px)
+{
+    aside
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+body
+{
+    font-family: 'Roboto Slab', serif;
+
+    background-color: aliceblue;
+    background-attachment: fixed;
+}
+
+/* media queries */
+
+/*# sourceMappingURL=main.css.map */

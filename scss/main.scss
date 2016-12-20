@@ -1,0 +1,19 @@
+/* variables */
+$primary-color : aliceblue;
+$font-family : 'Roboto Slab', serif;
+
+/* imports */
+@import '_header';
+@import '_nav';
+@import '_section';
+@import '_article';
+@import '_footer';
+@import '_aside';
+
+body{
+  background-attachment: fixed;
+  background-color: $primary-color;
+  font-family: $font-family;
+}
+
+/* media queries */

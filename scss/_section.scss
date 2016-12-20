@@ -1,0 +1,97 @@
+/* variables */
+$card_height :250px;
+/* mixins */
+@mixin cardstyle {
+  background-color: seashell;
+  box-shadow: 0px 0px 10px goldenrod;
+  border-color: forestgreen;
+  height: $card_height;
+  width: 90%;
+}
+
+@mixin flip_init {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+}
+@mixin flip_hideface {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+@mixin flip_activate {
+  &:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+  }
+}
+/* custom style */
+section{
+  margin-top: 60px;
+  .cards{
+      margin-top: 30px;
+      .card{
+        height: $card_height;
+      position: relative;
+      @include flip_init;
+      @include flip_activate;
+    img{
+      @include cardstyle;
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    blockquote{
+      @include cardstyle;
+      line-height: 3em;
+      padding: 0;
+      @include flip_hideface;
+      position: absolute;
+    }
+  }
+  }
+  .carousel{
+    margin-top: 30px;
+    height: 400px;
+    box-shadow: 5px 5px 10px teal;
+    .item {
+      img{
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+}
+
+/* media queries */
+@media (max-width: 991px) and (min-width : 626px) {
+  section{
+    .cards{
+      .card{
+        width: 60%;
+        margin-top: 30px;
+        margin-left: 20%;
+        img,blockquote{
+      }
+      }
+      }
+    }
+  }
+
+@media (max-width: 625px) {
+  section{
+    .cards{
+      .card{
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+  }
+}
